@@ -1,2 +1,2 @@
-# kairunwen.github.io
+# HomePage
 Kairun Wen's HomePage
