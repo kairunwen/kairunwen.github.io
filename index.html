@@ -173,7 +173,7 @@
       
       <a href="https://www.youtube.com/watch?v=_9aQHLHHoEM">Video</a> |
       <a href="https://huggingface.co/spaces/kairunwen/InstantSplat">HF Demo</a> |
-      <a href="https://github.com/NVlabs/InstantSplat">Code [1000+⭐]</a> 
+      <a href="https://github.com/NVlabs/InstantSplat">Code [1300+⭐]</a> 
 
       
 
@@ -184,8 +184,8 @@
 
 <pre xml:space="preserve">
   @misc{fan2024instantsplat,
-    title={InstantSplat: Unbounded Sparse-view Pose-free Gaussian Splatting in 40 Seconds},
-    author={Zhiwen Fan and Wenyan Cong and Kairun Wen and Kevin Wang and Jian Zhang and Xinghao Ding and Danfei Xu and Boris Ivanovic and Marco Pavone and Georgios Pavlakos and Zhangyang Wang and Yue Wang},
+    title={InstantSplat: Sparse-view Gaussian Splatting in Seconds},
+    author={Zhiwen Fan and Kairun Wen and Wenyan Cong and Kevin Wang and Jian Zhang and Xinghao Ding and Danfei Xu and Boris Ivanovic and Marco Pavone and Georgios Pavlakos and Zhangyang Wang and Yue Wang},
     year={2024},
     eprint={2403.20309},
     archivePrefix={arXiv},
@@ -195,6 +195,49 @@
       </div>
     </td>
   </tr>
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://cvpr2025-jarvisir.github.io/">
+    <video playsinline autoplay loop muted src="images/javisir/jarvisIR-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://cvpr2025-jarvisir.github.io/" id="JarvisIR">
+      <heading>JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration</heading></a><br>
+      Yunlong Lin*, Zixu Lin*, Haoyu Chen, Panwang Pan, Chenxin Li, Sixiang Chen, <u>Kairun Wen</u>, Yeying Jin, Wenbo Li, Xinghao Ding <br>
+      CVPR 2025 <br>
+      </p>
+
+      <div class="paper" id="javisir">
+      <a href="https://cvpr2025-jarvisir.github.io/">Project</a> |
+      <a href="https://lyl1015.github.io/papers/CVPR2025_JarvisIR.pdf">Paper</a> |
+      <a href="javascript:toggleblock('javisir_abs')">Abstract</a> |
+      <a shape="rect" href="javascript:togglebib('javisir')" class="togglebib">Bibtex</a> | 
+      <a href="https://github.com/LYL1015/JarvisIR">Code</a>
+      
+
+      <p align="justify"> <i id="javisir_abs">
+        &nbsp;&nbsp;&nbsp;&nbsp;Vision-centric perception systems struggle with unpredictable and coupled weather degradations in the wild. Current solutions are often limited, as they either depend on specific degradation priors or suffer from significant domain gaps. To enable robust and operation in real-world conditions, we propose <strong><span style="color: rgb(32, 146, 228);">JarvisIR</span></strong>, a VLM-powered agent that leverages the VLM as a controller to manage multiple expert restoration models. To further enhance system robustness, reduce hallucinations, and improve generalizability in real-world adverse weather, JarvisIR employs a novel two-stage framework consisting of supervised fine-tuning and human feedback alignment. Specifically, to address the lack of paired data in real-world scenarios, the human feedback alignment enables the VLM to be fine-tuned effectively on large-scale real-world data in an unsupervised manner. To support the training and evaluation of JarvisIR, we introduce CleanBench, a comprehensive dataset consisting of high-quality and large-scale instruction-responses pairs, including 150K synthetic entries and 80K real entries. Extensive experiments demonstrate that JarvisIR exhibits superior decision-making and restoration capabilities. Compared with existing methods, it achieves a 50% improvement in the average of all perception metrics on CleanBench-Real.
+      </i></p>
+
+<pre xml:space="preserve">
+  @inproceedings{jarvisir2025,
+    title={JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration},
+    author={Lin, Yunlong and Lin, Zixu and Chen, Haoyu and Pan, Panwang and Li, Chenxin and Chen, Sixiang and Kairun, Wen and Jin, Yeying and Li, Wenbo and Ding, Xinghao},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year={2025}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
 
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://github.com/dplut/dplut.github.io">
@@ -234,6 +277,12 @@
     </td>
   </tr>
 
+
+
+
+
+
+
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://lightgaussian.github.io/">
     <video playsinline autoplay loop muted src="images/lightgaussian/LightGaussian-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
@@ -249,8 +298,8 @@
       <a href="https://arxiv.org/abs/2311.17245">Paper</a> |
       <a href="javascript:toggleblock('lightgaussian_abs')">Abstract</a> |
       <a shape="rect" href="javascript:togglebib('lightgaussian')" class="togglebib">Bibtex</a> |
-      <a href="https://github.com/VITA-Group/LightGaussian">Code</a> |
-      <a href="https://www.youtube.com/watch?v=470hul75bSM&feature=youtu.be">Video</a>
+      <a href="https://www.youtube.com/watch?v=470hul75bSM&feature=youtu.be">Video</a> |
+      <a href="https://github.com/VITA-Group/LightGaussian">Code [600+⭐]</a> 
 
       <p align="justify"> <i id="lightgaussian_abs">
         &nbsp;&nbsp;&nbsp;&nbsp;Recent advancements in real-time neural rendering using point-based techniques have paved the way for the widespread adoption of 3D representations. However, foundational approaches like 3D Gaussian Splatting come with a substantial storage overhead caused by growing the Structure-from-Motion (SfM) points to millions, often demanding gigabyte-level disk space for a single unbounded scene, posing significant scalability challenges and hindering the splatting efficiency.<br>
@@ -341,9 +390,9 @@
     <td style="padding:20px;width:100%;vertical-align:middle">
       International Conference on Machine Learning <b>(ICML)</b>, 2025
       <br>
-      International Conference on Learning Representations <b>(ICLR)</b>, 2024
+      International Conference on Learning Representations <b>(ICLR)</b>, 2025
       <br>
-      Conference on Neural Information Processing Systems <b>(NeurIPS)</b>, 2024
+      Conference on Neural Information Processing Systems <b>(NeurIPS)</b>, 2025, 2024
       </p>
     </td>
   </tr>
@@ -420,6 +469,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('dplut_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('javisir_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('agile-but-safe_abs');
