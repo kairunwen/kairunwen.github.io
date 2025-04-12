@@ -103,6 +103,8 @@
     <a href="https://www.xiaohongshu.com/user/profile/5b003ed14eacab54c3be8a61">RedNote</a> |    
     <a href="https://www.youtube.com/@kairunwen">Youtube</a> |  
     </p>
+    
+
     <p align="center" style="margin-top:-8px;">
       <iframe id="twitter-widget-0" 
               scrolling="no" 
@@ -128,7 +130,13 @@
           <li><strong style="color: #27AE60;">3D Reconstruction</strong>: Few-Shot and Ultra-Efficient 3D Learning</li>
           <li><strong style="color: #e18a3b;">3D Perception</strong>: Semantic Understanding </li>
           <li><strong style="color: #2092E4;">Computational Photography</strong>: Image Restoration, Low-Light Enhancement</li>
+          <li><strong style="color: #9A2036;">AI Agents (ongoing)</strong>: Planning and Decision-Making, Reinforcement learning</li>
         </ul>
+      </p>
+
+      <p>I am currently looking for <strong>26 fall PhD positions</strong> and actively seeking collaborations! If you are interested in working together or have potential PhD opportunities, please feel free to reach out to me.
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>WeChat</strong>: kairun_wen &nbsp;&nbsp; <strong>Email</strong>: wenkairun@gmail.com        
       </p>
      
     </td>
@@ -159,6 +167,58 @@
  
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
+
+
+
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://instantsplat.github.io/">
+    <video playsinline autoplay loop muted src="images/sam3r/SAM3R-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://instantsplat.github.io/" id="SAM3R">
+      <heading>SAM3R: Language-Grounded Segment Anything Model for 3D Reconstruction in Real-time</heading></a><br>
+      <u>Kairun Wen</u><br>
+      Ongoing<br>
+      </p>
+      <div class="paper" id="sam3r">           
+      <a href="javascript:toggleblock('sam3r_abs')">Abstract</a> 
+
+      
+
+      <p align="justify"> <i id="sam3r_abs">
+&nbsp;&nbsp;&nbsp;&nbsp;Embodied agents are expected to fully understand the 3D physical  world simultaneously with exploration. This necessitates agents equipped with robust spatial reasoning and semantic understanding, requiring pretraining on massive data that goes beyond mere pixels.
+However, due to the scarcity of the high-quality 3D data and 3D-language paired data, directly training such a model is almost infeasible.
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;To this end, we propose a data engine that leverages foundation models to automatically generate and refine pseudo-labels for model training with minimal manual supervision.
+Our model, called  <strong>SAM3R</strong> (Segment Anything Model for 3D Reconstruction), an online, real-time, RGB-only and Language-grounded 4D perception method that can segment and retrieve any 3D instance given textual queries interactively.
+    Specifically, we first leverage SAM and CLIP to synergistically generate 2D semantic priors, then align these priors with the scene geometry in 3D space using calibrated multi-modal data, and ultimately obtain the 3D-aware pseudo-labels. By training on these labels, we distill the semantically-rich knowledge from 2D foundation models into our SAM3R model.
+We evaluate our method on various 3D perception tasks and demonstrate competitive or state-of-the-art performance in each. We showcase new avenues for processing arbitrary web-scale monocular video data in an online fashion for unconstrained embodied scenarios where depth and semantics are absent.</i></p>
+
+<pre xml:space="preserve">
+  @misc{fan2024instantsplat,
+    title={InstantSplat: Sparse-view Gaussian Splatting in Seconds},
+    author={Zhiwen Fan and Kairun Wen and Wenyan Cong and Kevin Wang and Jian Zhang and Xinghao Ding and Danfei Xu and Boris Ivanovic and Marco Pavone and Georgios Pavlakos and Zhangyang Wang and Yue Wang},
+    year={2024},
+    eprint={2403.20309},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
   <tr>
     <td width="40%" valign="top" align="center"><a href="https://instantsplat.github.io/">
     <video playsinline autoplay loop muted src="images/instantsplat/InstantSplat-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
@@ -167,7 +227,7 @@
       <p><a href="https://instantsplat.github.io/" id="InstantSplat">
       <heading>InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds</heading></a><br>
       <u>Kairun Wen*</u>, Zhiwen Fan*, Wenyan Cong*, Kevin Wang, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang<br>
-      Preprint 2024<br>
+      Preprint<br>
       </p>
       <div class="paper" id="instantsplat">
       <a href="https://instantsplat.github.io/">Project</a> |
@@ -476,6 +536,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('instantsplat_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('sam3r_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('dplut_abs');
