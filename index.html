@@ -210,6 +210,48 @@ We evaluate our method on various 3D perception tasks and demonstrate competitiv
 
 
 
+  <tr>
+    <td width="40%" valign="top" align="center"><a href="https://dynamic-verse.github.io/">
+    <video playsinline autoplay loop muted src="images/dynamicverse/DynamicVerse-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://dynamic-verse.github.io/" id="DynamicVerse">
+      <heading>DynamicVerse: Physically-Aware Multimodal Modeling for Dynamic 4D Worlds</heading></a><br>
+      <u>Kairun Wen*</u>, Yuzhi Huang*, Runyu Chen, Hui Zheng, Yunlong Lin, Panwang Pan, Chenxin Li, Wenyan Cong, Jian Zhang, Junbin Lu, Chenguo Lin, Dilin Wang, Zhicheng Yan, Hongyu Xu, Justin Theiss, Yue Huang, Xinghao Ding, Rakesh Ranjan, Zhiwen Fan<br>
+      Preprint<br>
+      </p>
+      <div class="paper" id="dynamicverse">
+      <a href="https://dynamic-verse.github.io/">Project</a> |
+      <!-- <a href="https://arxiv.org/abs/2403.20309">Paper</a> |       -->
+      <a href="javascript:toggleblock('dynamicverse_abs')">Abstract</a> |
+      <!-- <a shape="rect" href="javascript:togglebib('dynamicverse')" class="togglebib">Bibtex</a> | -->
+      
+      <!-- <a href="https://www.youtube.com/watch?v=_9aQHLHHoEM">Video</a> | -->
+      <!-- <a href="https://huggingface.co/spaces/kairunwen/InstantSplat">HF Demo</a> | -->
+      <!-- <a href="https://github.com/NVlabs/InstantSplat">Code [1400+⭐]</a>  -->
+
+      
+
+      <p align="justify"> <i id="dynamicverse_abs">
+        &nbsp;&nbsp;&nbsp;&nbsp;Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human‑like capabilities. However, existing datasets are often derived from limited simulators or utilize traditional Structure-from-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet.<br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;To bridge these gaps, we introduce <strong>DynamicVerse</strong>, a physical‑scale, multimodal 4D modeling framework for real-world video. We employ large vision, geometric, and multimodal models to interpret metric-scale static geometry, real-world dynamic motion, instance-level masks, and holistic descriptive captions. By integrating window-based Bundle Adjustment with global optimization, our method converts long real-world video sequences into a comprehensive 4D multimodal format. DynamicVerse delivers a large-scale dataset consists of 100K+ video with 800K+ annotated masks and 10M+ frames from internet videos. Experimental evaluations on three benchmark tasks---video depth estimation, camera pose estimation, and camera intrinsics estimation---validate that our 4D modeling achieves superior performance in capturing physical-scale measurements with greater global accuracy than existing methods.</i></p>
+
+<pre xml:space="preserve">
+  @misc{fan2024instantsplat,
+    title={InstantSplat: Sparse-view Gaussian Splatting in Seconds},
+    author={Zhiwen Fan and Kairun Wen and Wenyan Cong and Kevin Wang and Jian Zhang and Xinghao Ding and Danfei Xu and Boris Ivanovic and Marco Pavone and Georgios Pavlakos and Zhangyang Wang and Yue Wang},
+    year={2024},
+    eprint={2403.20309},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+  }
+</pre>
+      </div>
+    </td>
+  </tr>
+
+
 
 
 
@@ -535,6 +577,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('instantsplat_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('dynamicverse_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('sam3r_abs');
