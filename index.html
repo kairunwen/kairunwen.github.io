@@ -207,6 +207,47 @@ We evaluate our method on various 3D perception tasks and demonstrate competitiv
   </tr> -->
 
 
+    <tr>
+    <td width="40%" valign="top" align="center"><a href="https://dynamic-verse.github.io/">
+    <video playsinline autoplay loop muted src="images/dynamicverse/DynamicVerse-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+    </a></td>
+    <td width="60%" valign="top">
+      <p><a href="https://dynamic-verse.github.io/" id="DynamicVerse">
+      <heading>Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World</heading></a><br>
+      Yuzhi Huang*, <u>Kairun Wen*</u>, Rongxin Gao*, Dongxuan Liu, Yibin Lou, Jie Wu, Jing Xu, Jian Zhang, Zheng Yang, Yunlong Lin, Chenxin Li, Panwang Pan, Junbin Lu, Jingyan Jiang, Xinghao Ding, Yue Huang, Zhi Wang<br>
+      CVPR 2026<br>
+      </p>
+      <div class="paper" id="dynamicverse">
+      <a href="https://dynamic-verse.github.io/">Project</a> |
+      <a href="https://arxiv.org/abs/2512.00300">Paper</a> |      
+      <a href="javascript:toggleblock('dynamicbench_abs')">Abstract</a> |
+      <a shape="rect" href="javascript:togglebib('dynamicverse')" class="togglebib">Bibtex</a> |      
+      <a href="https://www.youtube.com/watch?v=0h7XysIpG8Y">Video</a> |
+      <a href="https://huggingface.co/spaces/kairunwen/InstantSplat">HF Data</a> |
+      <a href="https://github.com/Dynamics-X/DynamicVerse">Code</a> 
+
+    
+      <p align="justify"> <i id="dynamicbench_abs">
+        &nbsp;&nbsp;&nbsp;&nbsp;Humans inhabit a physical 4D world where geometric structure and semantic content evolve over time, constituting a dynamic 4D reality (spatial with temporal dimension). While current Multimodal Large Language Models(MLLMs) excel in static visual understanding, can they also be adept at “thinking in dynamics”, i.e., perceive, track and reason about spatio-temporal dynamics in evolving scenes? <br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;To systematically assess their spatio-temporal reasoning and localized dynamics perception capabilities, we introduce <strong>Dyn-Bench</strong>, a large-scale benchmark built from diverse real-world and synthetic video datasets, enabling robust and scalable evaluation of spatio-temporal understanding. Through multi-stage filtering from massive 2D and 4D data sources, Dyn-Bench provides a high-quality collection of dynamic scenes, comprising 1k videos, 7k visual question answering (VQA) pairs, and 3k dynamic object grounding pairs. We probe general, spatial and region-level MLLMs to express how they think in dynamics both linguistically and visually, and find that existing models cannot simultaneously maintain strong performance in both spatio-temporal reasoning and dynamic object grounding, often producing inconsistent interpretations of motion and interaction. Notably, conventional prompting strategies (e.g., chain-of-thought or caption-based hints) provide limited improvement, whereas structured integration approaches, including Mask-Guided Fusion and Spatio-Temporal Textual Cognitive Map (ST-TCM), significantly enhance MLLMs’ dynamics perception and spatio-temporal028reasoning in the physical 4D world.</i></p>
+
+
+<pre xml:space="preserve">
+  @misc{wen2025dynamicverse,
+        title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling}, 
+        author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
+        year={2025},
+        eprint={2512.03000},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2512.03000}, 
+    }
+</pre>
+      </div>
+    </td>
+  </tr>
+
 
 
   <tr>
@@ -581,6 +622,9 @@ hideallbibs();
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('dynamicverse_abs');
+</script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('dynamicbench_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('sam3r_abs');
