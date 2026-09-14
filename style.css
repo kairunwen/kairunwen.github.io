@@ -81,8 +81,8 @@ main { line-height: 1.65; }
 .publication h3 a { color: var(--ink); }
 .publication h3 a:hover { color: var(--accent); }
 .authors { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
-.authors u { color: var(--ink); font-weight: 800; text-decoration-color: #b49a7d; text-underline-offset: 3px; }
-.paper-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 8px; font-size: 14px; font-weight: 800; }
+.authors u { color: var(--ink); font-weight: 600; text-decoration-color: #b49a7d; text-underline-offset: 3px; }
+.paper-links { display: flex; flex-wrap: wrap; gap: 4px 18px; margin-top: 8px; font-size: 14px; font-weight: 600; }
 .paper-links a { padding-block: 3px; }
 .paper-details { display: flex; flex-wrap: wrap; align-items: start; gap: 0 20px; margin-top: 2px; font-size: 14px; }
 .paper-details details[open] { flex-basis: 100%; }
