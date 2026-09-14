@@ -1,21 +1,17 @@
-"""Export the homepage's aggregate GA4 views; see README.md for authentication."""
-import json
+"""Privately query the homepage's aggregate GA4 views; see README.md for authentication."""
 import os
-from datetime import datetime, timezone
-from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
 PROPERTY_ID = "553978254"
 
 
 def view_count(report):
     if report.get("metadata", {}).get("subjectToThresholding"):
-        raise ValueError("GA report is thresholded; keeping the previous count")
+        raise ValueError("GA report is thresholded")
     # GA omits headers and rows entirely for a new property with no collected data.
     if report.get("kind") == "analyticsData#runReport" and not report.get("metricHeaders") and not report.get("rows"):
         return 0
     if report.get("metricHeaders") != [{"name": "screenPageViews", "type": "TYPE_INTEGER"}]:
-        raise ValueError("Unexpected GA metric; keeping the previous count")
+        raise ValueError("Unexpected GA metric")
     rows = report.get("rows", [])
     if len(rows) > 1:
         raise ValueError("Expected one aggregate row")
@@ -51,14 +47,7 @@ def main():
         if not response.ok:
             raise RuntimeError(f"Google Analytics returned HTTP {response.status_code}; check Data API and property Viewer access")
         count = view_count(response.json())
-    output = ROOT / "data/page-views.json"
-    temporary = output.with_suffix(".tmp")
-    temporary.write_text(json.dumps({
-        "views": count,
-        "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-    }) + "\n")
-    temporary.replace(output)
-    print(f"Exported {count} homepage views")
+    print(f"Homepage views since 2026-09-14: {count}")
 
 
 if __name__ == "__main__":

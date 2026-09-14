@@ -13,18 +13,3 @@ if (location.hostname === 'kairunwen.github.io' && ['/', '/index.html'].includes
   tag.src = 'https://www.googletagmanager.com/gtag/js?id=G-DF4WX2Z0XM';
   document.head.appendChild(tag);
 }
-
-// The server-side export contains only a total and its update time, never credentials.
-fetch('data/page-views.json', { cache: 'no-cache' })
-  .then(response => {
-    if (!response.ok) throw new Error('Views unavailable');
-    return response.json();
-  })
-  .then(data => {
-    const counter = document.getElementById('page-views');
-    if (counter && Number.isSafeInteger(data.views) && data.views >= 0) {
-      counter.textContent = data.views.toLocaleString('en-US');
-      counter.title = `Google Analytics · Updated ${data.updated_at}`;
-    }
-  })
-  .catch(() => {}); // Keep the honest unavailable state when the export cannot be read.
