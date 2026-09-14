@@ -1,731 +1,233 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-  /* Design Credits: Jon Barron and Deepak Pathak and Abhishek Kar and Saurabh Gupta*/
-  a {
-  color: #1772d0;
-  text-decoration:none;
-  }
-  a:focus, a:hover {
-  color: #f09228;
-  text-decoration:none;
-  }
-  body,td,th {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400
-  }
-  heading {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 17px; /* 19 */
-    font-weight: 600 /* 1000 */
-  }
-  hr
-  {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(123, 77, 77, 0.75), rgba(0, 0, 0, 0));
-  }
-  strong {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 600 /* 800 */
-  }
-  strongred {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    color: 'red' ;
-    font-size: 16px
-  }
-  sectionheading {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: 600
-  }
-  pageheading {
-    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
-    font-size: 38px;
-    font-weight: 400
-  }
-  .ImageBorder
-  {
-      border-width: 1px;
-      border-color: Black;
-  }
-  .disabled-link {
-    color: #999999;
-    cursor: default;
-    text-decoration: none;
-  }
-  </style>
-  <!-- <link rel="shortcut icon" href="images/apple-touch-ri-logo-white-120x120.png"> -->
-  <link rel="icon" type="image/x-icon" href="images/profile_fig/Giraffe.ico">
-  <script type="text/javascript" src="js/hidebib.js"></script>
-  <title>Kairun Wen</title>
-  <meta name="Kairun Wen's Homepage" http-equiv="Content-Type" content="Kairun Wen's Homepage">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,600,400italic,600italic,300,300italic' rel='stylesheet' type='text/css'>
-  <!-- Start : Google Analytics Code -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-XXXXX-Y', 'auto');
-    ga('send', 'pageview');
-    </script>
-  <!-- End : Google Analytics Code -->
-  <!-- Scramble Script by Jeff Donahue -->
-  <script src="js/scramble.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kairun Wen — research in multimodal spatial intelligence, physical world modeling, and embodied foundation models.">
+  <title>Kairun Wen · Research</title>
+  <link rel="icon" href="images/profile_fig/Giraffe.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="js/analytics.js" defer></script>
 </head>
- 
-<body>
-<table width="900" border="0" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tr><td>
+<body id="top">
+<a class="skip-link" href="#about">Skip to content</a>
+<header class="site-header">
+  <div class="topbar shell">
+    <!-- CUHK emblem: https://cuhk.edu.hk/english/images/fav-icons/android-chrome-192x192.png -->
+    <a class="brand" href="#top"><img src="images/profile_fig/CUHK.png" alt="CUHK emblem" width="32" height="32">Kairun Wen</a>
+    <nav aria-label="Main navigation"><a href="#top" aria-current="page">Home</a><a href="#news">News</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#service">Service</a><a href="#awards">Awards</a></nav>
+  </div>
+</header>
+<div class="masthead">
+  <section class="hero shell" aria-labelledby="page-title">
+    <div class="hero-copy">
+      <h1 id="page-title">Kairun Wen <span lang="zh">温凯润</span></h1>
+      <div class="about-copy" id="about"><p> I am a first-year Ph.D. student at <a href="https://mmlab.ie.cuhk.edu.hk/">MMLab</a>, <a href="https://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>, advised by Prof. <a href="https://www.ee.cuhk.edu.hk/~hsli/">Hongsheng Li</a>. Currently, I am pursuing my master’s degree in the School of Informatics at <a href="https://www.xmu.edu.cn/">Xiamen University</a>, advised by Prof. <a href="https://scholar.google.com/citations?user=k5hVBfMAAAAJ&amp;hl=zh-CN">Xinghao Ding</a>. I have research experience with leading research groups across academia and industry, including <a href="https://www.vita-group.space/">VITA-Group@UT Austin</a> and <a href="https://www.vita-group.space/">InternRobotics@Shanghai AI Lab</a>.   </p><p>My long-term research goal is to develop embodied foundation models with multimodal spatial intelligence, enabling robot-use agents to understand and model the dynamic physical world, plan and act through robotic skills and tools, and adapt their actions based on interaction and feedback.</p></div>
+      <div class="hero-links"><a class="primary-link" href="#publications">Explore my research <span aria-hidden="true">↓</span></a><a href="mailto:wenkairun@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <div class="profile">
+      <p class="profile-keywords"><span>Robot-use Agent</span> · <span>Embodied Foundation Model</span> · <span>Spatial intelligence</span></p>
+      <a class="portrait" href="images/profile_fig/kairun_0914.png"><img src="images/profile_fig/kairun_0914.png" width="1254" height="1254" alt="Kairun Wen"></a>
+      <nav class="social-links" aria-label="Social and research profiles">
+        <a href="mailto:wenkairun@gmail.com" aria-label="Email Kairun Wen" title="wenkairun@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=RzRhziMAAAAJ&amp;hl=zh-CN" aria-label="Google Scholar" title="Google Scholar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5-10-5Z"/><path d="M6 11v6c4 3 8 3 12 0v-6M22 9v7"/></svg></a>
+        <details class="wechat-contact"><summary aria-label="WeChat: kairun_wen" title="WeChat: kairun_wen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 8.5C14 5.5 11.5 3.5 8 3.5c-3.9 0-7 2.5-7 5.5 0 1.8 1.1 3.4 2.8 4.4L3 16l3-1.6c.7.2 1.4.3 2 .3"/><path d="M23 14c0-3-2.9-5.5-6.5-5.5S10 11 10 14s2.9 5.5 6.5 5.5c.7 0 1.4-.1 2-.3L21 21l-.5-2.7C22 17.3 23 15.8 23 14Z"/><path d="M5.5 7.5h.01M10 7.5h.01M14 13h.01M18.5 13h.01" stroke-width="2.5"/></svg></summary><span>WeChat: <strong>kairun_wen</strong></span></details>
+        <a href="https://github.com/kairunwen" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .75a11.25 11.25 0 0 0-3.558 21.923c.563.104.768-.244.768-.542 0-.267-.01-.975-.015-1.913-3.13.68-3.79-1.508-3.79-1.508-.512-1.3-1.25-1.646-1.25-1.646-1.022-.699.077-.685.077-.685 1.13.08 1.725 1.16 1.725 1.16 1.005 1.722 2.637 1.225 3.28.937.102-.729.393-1.226.715-1.508-2.498-.284-5.124-1.25-5.124-5.56 0-1.228.439-2.232 1.16-3.018-.116-.284-.503-1.428.11-2.977 0 0 .945-.303 3.094 1.153A10.78 10.78 0 0 1 12 6.187c.956.005 1.918.129 2.818.379 2.15-1.456 3.094-1.153 3.094-1.153.613 1.549.227 2.693.111 2.977.722.786 1.159 1.79 1.159 3.018 0 4.322-2.63 5.273-5.136 5.551.404.35.766 1.043.766 2.1 0 1.516-.014 2.74-.014 3.112 0 .301.202.652.774.542A11.25 11.25 0 0 0 12 .75Z"/></svg></a>
+        <a href="https://x.com/kairunwen" aria-label="X / Twitter" title="X / Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h4l12 18h-4L4 3ZM20 3l-7 8M4 21l7-8"/></svg></a>
+        <a href="https://www.linkedin.com/in/kairun-wen-8413172ab/" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="7.5" cy="7.5" r="1.3"/><path d="M6.3 10h2.4v8H6.3zm4.4 0H13v1c.7-1 1.6-1.2 2.5-1.2 2.1 0 2.8 1.4 2.8 3.7V18h-2.4v-4c0-1.3-.2-2-1.3-2-1.2 0-1.5.9-1.5 2v4h-2.4z"/></svg></a>
+        <a href="https://www.xiaohongshu.com/user/profile/5b003ed14eacab54c3be8a61" aria-label="RedNote" title="RedNote"><span class="rednote-icon" aria-hidden="true">小红书</span></a>
+        <a href="https://huggingface.co/kairunwen" aria-label="Hugging Face" title="Hugging Face"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 13a8 8 0 1 1 15 0M8 9h.01M16 9h.01M9 12c1.5 2 4.5 2 6 0M7 21c-3 0-5-2-5-5v-2c0-1 1.5-1 1.5 0v2-4c0-1 1.5-1 1.5 0v4-3c0-1 1.5-1 1.5 0v3l1-1c1-1 2 .5 1 1.5L7 18M17 21c3 0 5-2 5-5v-2c0-1-1.5-1-1.5 0v2-4c0-1-1.5-1-1.5 0v4-3c0-1-1.5-1-1.5 0v3l-1-1c-1-1-2 .5-1 1.5L17 18"/></svg></a>
+        <a href="https://www.youtube.com/@kairunwen" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 6 3-6 3V9Z" fill="currentColor" stroke="none"/></svg></a>
+      </nav>
+    </div>
+  </section>
 
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <p align="center">
-    <pageheading>Kairun Wen 「温凯润」</pageheading><br>
-  </p>
+</div>
+<main class="shell">
+  <section class="news section-grid" id="news" aria-labelledby="news-title"><div><p class="eyebrow">UPDATES</p><h2 id="news-title">Recent news.</h2></div><ul class="news-list"><li><time datetime="2026-06">2026.06</time><span>🎉 <a href="https://dyn-bench.github.io/"><strong>Thinking in Dynamics</strong></a> was selected for an <strong>Oral presentation</strong> at the <a href="https://datamfm.github.io/">CVPR 2026 DataMFM Workshop</a> and accepted for presentation at the <a href="https://4dvisionworkshop.github.io/">CVPR 2026 4D Vision Workshop</a>.</span></li>
+<li><time datetime="2026-02">2026.02</time><span>Two papers (<a href="https://dyn-bench.github.io/">Thinking in Dynamics</a> and <a href="https://openaccess.thecvf.com/content/CVPR2026/html/Pan_Diff4Splat_Repurposing_Video_Diffusion_Models_for_Dynamic_Scene_Generation_CVPR_2026_paper.html">Diff4Splat</a>) were accepted to CVPR'26 🎉!</span></li>
+<li><time datetime="2025-09">2025.09</time><span>Two papers (<a href="https://dynamic-verse.github.io/">DynamicVerse</a> and <a href="https://papers.nips.cc/paper_files/paper/2025/hash/c9874ab9105bd7ac2a991fe206788eaf-Abstract-Conference.html">HumanCrafter</a>) were accepted to NeurIPS'25 🎉!</span></li>
+<li><time datetime="2025-02">2025.02</time><span>One paper (<a href="https://openaccess.thecvf.com/content/CVPR2025/html/Lin_JarvisIR_Elevating_Autonomous_Driving_Perception_with_Intelligent_Image_Restoration_CVPR_2025_paper.html">JarvisIR</a>) was accepted to CVPR'25 🎉!</span></li>
+<!-- Month follows AAAI-25's main-track final notification date: 2024-12-09, https://aaai.org/conference/aaai/aaai-25/ -->
+<li><time datetime="2024-12">2024.12</time><span>One paper (<a href="https://ojs.aaai.org/index.php/AAAI/article/view/32565">DPLUT</a>) was accepted to AAAI'25 🎉!</span></li>
+<li><time datetime="2024-09">2024.09</time><span>Two papers (<a href="https://lightgaussian.github.io/">LightGaussian</a> and <a href="https://papers.neurips.cc/paper_files/paper/2024/hash/46fd43174b82660f24e3ba11cf5e1340-Abstract-Conference.html">Large Spatial Model</a>) were accepted to NeurIPS'24, with LightGaussian selected for a <strong>Spotlight</strong> presentation 🎉!</span></li></ul></section>
+  <section class="publications" id="publications" aria-labelledby="publications-title">
+    <header class="section-heading"><div><p class="eyebrow">THE RESEARCH</p><h2 id="publications-title">Publications.</h2></div><p>* Equal contribution &nbsp; · &nbsp; † Project lead</p></header>
+    <article class="publication" id="zipvggt" aria-labelledby="title-zipvggt">
+  <div class="publication-media"><a href="https://zipvggt.github.io/" tabindex="-1" aria-hidden="true"><img src="images/zipvggt/Zip-VGGT.png" alt="Zip-VGGT overview" loading="lazy"></a></div>
+  <div class="publication-copy">
+    <p class="venue">Preprint</p>
+    <h3 id="title-zipvggt"><a href="https://zipvggt.github.io/">Zip-VGGT: Object-Centric Spatiotemporal KV Compression for Streaming Vision Transformers</a></h3>
+    <p class="authors"><u>Kairun Wen†</u>, Runyu Chen, Wenyan Cong, Peiwei Lin, Tao Lu, Lihan Jiang, Weiguang Zhao, Junting Dong, Yunlong Lin, Yuzhi Huang, Xinghao Ding, Hongsheng Li, Linning Xu, Mulin Yu</p>
+    <nav class="paper-links" aria-label="Zip-VGGT resources"><a href="https://zipvggt.github.io/">Project</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="zipvggt_abs"> Streaming vision architectures have emerged as a powerful paradigm for embodied 4D spatial perception, enabling on-the-fly scene reconstruction. However, deploying these models in real-world infinite-horizon scenarios exposes a critical memory bottleneck: the unbounded accumulation of historical representations in the Key-Value (KV) cache. Existing token compression strategies attempt to mitigate this but suffer from decoupled, heuristic processing. They blindly aggregate tokens across physical boundaries, destroying high-frequency 3D geometry, and employ motion-blind eviction policies that erase the temporal trajectories of highly dynamic objects. <br/> To shatter this dilemma, we propose <strong>Zip-VGGT</strong>, the first object-centric spatiotemporal KV compression framework tailored for streaming vision models. Our core insight is to guide compression using high-level semantic and kinematic priors without introducing heavy computational overhead. Specifically, Zip-VGGT synergizes crisp 2D entity boundaries from a lightweight Segment Anything Model (SAM) with implicit 3D motion representations naturally encoded within the backbone's global attention layers. This enables object-bounded geometric spatial merging to fiercely preserve 3D topologies, alongside motion-aware temporal eviction that dynamically allocates cache budgets to retain interactive dynamic elements. Extensive experiments demonstrate that Zip-VGGT achieves huge compression ratios and inference speedups, successfully preventing memory explosion while maintaining high-fidelity 4D reconstruction for long-term embodied perception.</div></details></div>
+  </div>
+</article>
 
-  <tr>
-    <td width="30%" valign="top"><a href="images/profile_fig/Giraffe.png"><img src="images/profile_fig/Giraffe.png" width="100%" style="border-radius:15px"></a>
-    <p align=center>
-    | <a >CV</a> |
-    <a href="mailto:wenkairun@gmail.com">Email</a> |
-    <a href="https://github.com/kairunwen">Github</a> |
-    <br/>
-    | <a href="https://scholar.google.com/citations?user=RzRhziMAAAAJ&hl=zh-CN">Google Scholar</a> |
-    <a href="https://huggingface.co/kairunwen">HuggingFace</a> |
-    <br/>
-    | <a href="https://www.linkedin.com/in/kairun-wen-8413172ab/">LinkedIn</a> |
-    <!-- <a href="https://www.instagram.com/kairunwen/">Instagram</a> | -->
-    <a href="https://www.xiaohongshu.com/user/profile/5b003ed14eacab54c3be8a61">RedNote</a> |    
-    <a href="https://www.youtube.com/@kairunwen">Youtube</a> |  
-    </p>
-    
+<article class="publication" id="DynamicBench" aria-labelledby="title-DynamicBench">
+  <div class="publication-media"><a href="https://dyn-bench.github.io/" tabindex="-1" aria-hidden="true"><img src="images/dynbench/Dynbench-teaser.png" alt="Thinking in Dynamics overview" loading="lazy"></a></div>
+  <div class="publication-copy">
+    <p class="venue">CVPR 2026</p>
+    <h3 id="title-DynamicBench"><a href="https://dyn-bench.github.io/">Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World</a></h3>
+    <p class="authors">Yuzhi Huang*, <u>Kairun Wen*</u>, Rongxin Gao*, Dongxuan Liu, Yibin Lou, Jie Wu, Jing Xu, Jian Zhang, Zheng Yang, Yunlong Lin, Chenxin Li, Panwang Pan, Junbin Lu, Jingyan Jiang, Xinghao Ding, Yue Huang, Zhi Wang</p>
+    <nav class="paper-links" aria-label="Thinking in Dynamics resources"><a href="https://dyn-bench.github.io/">Project</a>
+<a href="https://arxiv.org/abs/2512.00300">Paper</a>
+<a href="https://huggingface.co/datasets/yu2hi13/Dyn-Bench">HF Data</a>
+<a href="https://github.com/Dynamics-X/Thinking-in-Dynamics">Code</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="dynamicbench_abs"> Humans inhabit a physical 4D world where geometric structure and semantic content evolve over time, constituting a dynamic 4D reality (spatial with temporal dimension). While current Multimodal Large Language Models(MLLMs) excel in static visual understanding, can they also be adept at “thinking in dynamics”, i.e., perceive, track and reason about spatio-temporal dynamics in evolving scenes? <br/> To systematically assess their spatio-temporal reasoning and localized dynamics perception capabilities, we introduce <strong>Dyn-Bench</strong>, a large-scale benchmark built from diverse real-world and synthetic video datasets, enabling robust and scalable evaluation of spatio-temporal understanding. Through multi-stage filtering from massive 2D and 4D data sources, Dyn-Bench provides a high-quality collection of dynamic scenes, comprising 1k videos, 7k visual question answering (VQA) pairs, and 3k dynamic object grounding pairs. We probe general, spatial and region-level MLLMs to express how they think in dynamics both linguistically and visually, and find that existing models cannot simultaneously maintain strong performance in both spatio-temporal reasoning and dynamic object grounding, often producing inconsistent interpretations of motion and interaction. Notably, conventional prompting strategies (e.g., chain-of-thought or caption-based hints) provide limited improvement, whereas structured integration approaches, including Mask-Guided Fusion and Spatio-Temporal Textual Cognitive Map (ST-TCM), significantly enhance MLLMs’ dynamics perception and spatio-temporal028reasoning in the physical 4D world.</div></details><details><summary>BibTeX</summary><pre>@misc{wen2025dynamicverse,
+        title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling},
+        author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
+        year={2025},
+        eprint={2512.03000},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2512.03000},
+    }</pre></details></div>
+  </div>
+</article>
 
-    <p align="center" style="margin-top:-8px;">
-      <iframe id="twitter-widget-0" 
-              scrolling="no" 
-              frameborder="0" 
-              allowtransparency="true" 
-              allowfullscreen="true" 
-              class="twitter-follow-button twitter-follow-button-rendered" 
-              style="position: static; visibility: visible; width: 156px; height: 20px;" 
-              title="Twitter Follow Button" 
-              src="https://platform.twitter.com/widgets/follow_button.2f70fb173b9000da126c79afe2098f02.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;screen_name=kairunwen&amp;show_count=false&amp;show_screen_name=true&amp;size=m" 
-              data-screen-name="kairunwen">
-      </iframe>
-      <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </p>
-    </td>
-    <td width="70%" valign="top" align="justify">
-      <p>    
-        I am an incoming Ph.D. student at <a href="https://mmlab.ie.cuhk.edu.hk/">MMLab</a>, <a href="https://www.cuhk.edu.hk/english/index.html">The Chinese University of Hong Kong</a>, advised by Prof. <a href="https://www.ee.cuhk.edu.hk/~hsli/">Hongsheng Li</a>. Currently, I am pursuing my master’s degree in the School of Informatics at <a href="https://www.xmu.edu.cn/">Xiamen University</a>, advised by Prof. <a href="https://scholar.google.com/citations?user=k5hVBfMAAAAJ&hl=zh-CN">Xinghao Ding</a>. I have research experience with leading research groups across academia and industry, including <a href="https://www.vita-group.space/">VITA-Group@UT Austin</a> and  <a href="https://www.vita-group.space/">InternRobotics@Shanghai AI Lab</a>. My long-term research goal is to develop embodied foundation models with multimodal spatial intelligence, enabling agents to build scalable world models of the dynamic physical world and act reliably within it.
-        <br>
-      </p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; My current research primarily focuses on:
-        <ul>
-          <li><strong style="color: #e18a3b;">Multimodal Spatial Intelligence</strong>: Integrating vision, language, geometry, and motion to understand 3D/4D scenes and reason about spatial dynamics.</li>
-          <li><strong style="color: #27AE60;">Physical World Modeling</strong>: Learning efficient and scalable representations of dynamic physical worlds for simulation, reasoning, and decision-making.</li>
-          <li><strong style="color: #9A2036;">Embodied Foundation Models</strong>: Developing models for embodied perception, reasoning, planning, and interaction in the physical environments.</li>
-        </ul>
-      </p>
-      <!-- <p style="color: #e60012;">I am currently looking for <strong>26 fall PhD positions</strong> and actively seeking collaborations! If you are interested in working together or have potential PhD opportunities, please feel free to reach out to me.</p> -->
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>WeChat</strong>: kairun_wen &nbsp;&nbsp; <strong>Email</strong>: wenkairun@gmail.com        
-      </p>
-     
-    </td>
-  </tr>
-</table>
+<article class="publication" id="DynamicVerse" aria-labelledby="title-DynamicVerse">
+  <div class="publication-media"><video controls playsinline muted loop preload="metadata" aria-label="DynamicVerse preview"><source src="images/dynamicverse/DynamicVerse-preview.mp4" type="video/mp4"><a href="images/dynamicverse/DynamicVerse-preview.mp4">Watch the DynamicVerse preview</a></video></div>
+  <div class="publication-copy">
+    <p class="venue">NeurIPS 2025</p>
+    <h3 id="title-DynamicVerse"><a href="https://dynamic-verse.github.io/">DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling</a></h3>
+    <p class="authors"><u>Kairun Wen*†</u>, Yuzhi Huang*, Runyu Chen, Hui Zheng, Yunlong Lin, Panwang Pan, Chenxin Li, Wenyan Cong, Jian Zhang, Junbin Lu, Chenguo Lin, Dilin Wang, Zhicheng Yan, Hongyu Xu, Justin Theiss, Yue Huang, Xinghao Ding, Rakesh Ranjan, Zhiwen Fan</p>
+    <nav class="paper-links" aria-label="DynamicVerse resources"><a href="https://dynamic-verse.github.io/">Project</a>
+<a href="https://arxiv.org/abs/2512.00300">Paper</a>
+<a href="https://www.youtube.com/watch?v=0h7XysIpG8Y">Video</a>
+<a href="https://huggingface.co/datasets/kairunwen/DynamicVerse">HF Data</a>
+<a href="https://github.com/Dynamics-X/DynamicVerse">Code</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="dynamicverse_abs"> Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities. However, existing datasets are often derived from limited simulators or utilize traditional Structurefrom-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet.<br/> To bridge these gaps, we introduce <strong>DynamicVerse</strong>, a physical-scale, multimodal 4D world modeling framework for dynamic real-world video. We employ large vision, geometric, and multimodal models to interpret metric-scale static geometry, real-world dynamic motion, instance-level masks, and holistic descriptive captions. By integrating window-based Bundle Adjustment with global optimization, our method converts long real-world video sequences into a comprehensive 4D multimodal format. DynamicVerse delivers a large-scale dataset consisting of 100K+ videos with 800K+ annotated masks and 10M+ frames from internet videos. Experimental evaluations on three benchmark tasks, namely video depth estimation, camera pose estimation, and camera intrinsics estimation, demonstrate that our 4D modeling achieves superior performance in capturing physical-scale measurements with greater global accuracy than existing methods.</div></details><details><summary>BibTeX</summary><pre>@misc{wen2025dynamicverse,
+        title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling},
+        author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
+        year={2025},
+        eprint={2512.03000},
+        archivePrefix={arXiv},
+        primaryClass={cs.CV},
+        url={https://arxiv.org/abs/2512.03000},
+    }</pre></details></div>
+  </div>
+</article>
 
-<hr/>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Recent News</sectionheading></td></tr>
-</table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-      <ul>     
-        <li>[02/2026] Two papers were accepted to CVPR'26 🎉!</li>    
-        <li>[09/2025] Two papers were accepted to NeurIPS'25 🎉!</li>
-        <li>[09/2024] Our NeurIPS'24 (<a href="https://lightgaussian.github.io/">LightGaussian</a>) is selected as <strong>spotlight</strong> presentation!</li>
-      </ul>
-    </td>
-  </tr>
-  
-</table>
-
-
-<hr/>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading> &nbsp;&nbsp; ( * denotes equal contribution, † denotes project lead )</td></tr>
-</table>
- 
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-
-
-
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://instantsplat.github.io/">
-    <video playsinline autoplay loop muted src="images/sam3r/SAM3R-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://instantsplat.github.io/" id="SAM3R">
-      <heading>SAM3R: Language-Grounded Segment Anything Model for 3D Reconstruction in Real-time</heading></a><br>
-      <u>Kairun Wen</u><br>
-      Ongoing<br>
-      </p>
-      <div class="paper" id="sam3r">           
-      <a href="javascript:toggleblock('sam3r_abs')">Abstract</a> 
-
-      
-
-      <p align="justify"> <i id="sam3r_abs">
-&nbsp;&nbsp;&nbsp;&nbsp;Embodied agents are expected to fully understand the 3D physical  world simultaneously with exploration. This necessitates agents equipped with robust spatial reasoning and semantic understanding, requiring pretraining on massive data that goes beyond mere pixels.
-However, due to the scarcity of the high-quality 3D data and 3D-language paired data, directly training such a model is almost infeasible.
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;To this end, we propose a data engine that leverages foundation models to automatically generate and refine pseudo-labels for model training with minimal manual supervision.
-Our model, called  <strong>SAM3R</strong> (Segment Anything Model for 3D Reconstruction), an online, real-time, RGB-only and Language-grounded 4D perception method that can segment and retrieve any 3D instance given textual queries interactively.
-    Specifically, we first leverage SAM and CLIP to synergistically generate 2D semantic priors, then align these priors with the scene geometry in 3D space using calibrated multi-modal data, and ultimately obtain the 3D-aware pseudo-labels. By training on these labels, we distill the semantically-rich knowledge from 2D foundation models into our SAM3R model.
-We evaluate our method on various 3D perception tasks and demonstrate competitive or state-of-the-art performance in each. We showcase new avenues for processing arbitrary web-scale monocular video data in an online fashion for unconstrained embodied scenarios where depth and semantics are absent.</i></p>
-
-<pre xml:space="preserve">
-  @misc{fan2024instantsplat,
+<article class="publication" id="InstantSplat" aria-labelledby="title-InstantSplat">
+  <div class="publication-media"><video controls playsinline muted loop preload="metadata" aria-label="InstantSplat preview"><source src="images/instantsplat/InstantSplat-preview.mp4" type="video/mp4"><a href="images/instantsplat/InstantSplat-preview.mp4">Watch the InstantSplat preview</a></video></div>
+  <div class="publication-copy">
+    <p class="venue">Preprint</p>
+    <h3 id="title-InstantSplat"><a href="https://instantsplat.github.io/">InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds</a></h3>
+    <p class="authors">Zhiwen Fan*, <u>Kairun Wen*</u>, Wenyan Cong*, Kevin Wang, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang</p>
+    <nav class="paper-links" aria-label="InstantSplat resources"><a href="https://instantsplat.github.io/">Project</a>
+<a href="https://arxiv.org/abs/2403.20309">Paper</a>
+<a href="https://www.youtube.com/watch?v=_9aQHLHHoEM">Video</a>
+<a href="https://huggingface.co/spaces/kairunwen/InstantSplat">HF Demo</a>
+<a href="https://github.com/NVlabs/InstantSplat">Code [1600+⭐]</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="instantsplat_abs"> While neural 3D reconstruction has advanced substantially, it typically requires densely captured multi-view data with carefully initialized poses (e.g., using COLMAP). However, this requirement limits its broader applicability, as Structure-from-Motion (SfM) is often unreliable in sparse-view scenarios where feature matches are limited, resulting in cumulative errors.<br/> In this paper, we introduce <strong>InstantSplat</strong>, a novel and lightning-fast neural reconstruction system that builds accurate 3D representations from as few as 2-3 images. InstantSplat adopts a self-supervised framework that bridges the gap between 2D images and 3D representations using Gaussian Bundle Adjustment (GauBA) and can be optimized in an end-to-end manner. InstantSplat integrates dense stereo priors and co-visibility relationships between frames to initialize pixel-aligned geometry by progressively expanding the scene avoiding redundancy. Gaussian Bundle Adjustment is used to adapt both the scene representation and camera parameters quickly by minimizing gradient-based photometric error. Overall, InstantSplat achieves large-scale 3D reconstruction in mere seconds by reducing the required number of input views, and is compatible with multiple 3D representations (3D-GS, Mip-Splatting). It achieves an acceleration of over 20 times in reconstruction, improves visual quality (SSIM) from 0.3755 to 0.7624 than COLMAP with 3D-GS.</div></details><details><summary>BibTeX</summary><pre>@misc{fan2024instantsplat,
     title={InstantSplat: Sparse-view Gaussian Splatting in Seconds},
     author={Zhiwen Fan and Kairun Wen and Wenyan Cong and Kevin Wang and Jian Zhang and Xinghao Ding and Danfei Xu and Boris Ivanovic and Marco Pavone and Georgios Pavlakos and Zhangyang Wang and Yue Wang},
     year={2024},
     eprint={2403.20309},
     archivePrefix={arXiv},
     primaryClass={cs.CV}
-  }
-</pre>
-      </div>
-    </td>
-  </tr> -->
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://zipvggt.github.io/">
-    <img src="images/zipvggt/Zip-VGGT.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://zipvggt.github.io/" id="zipvggt">
-      <heading>Zip-VGGT: Object-Centric Spatiotemporal KV Compression for Streaming Vision Transformers</heading></a><br>
-      <u>Kairun Wen†</u>, Runyu Chen, Wenyan Cong, Peiwei Lin, Tao Lu, Lihan Jiang, Weiguang Zhao, Junting Dong, Yunlong Lin, Yuzhi Huang, Xinghao Ding, Hongsheng Li, Linning Xu, Mulin Yu<br>
-      Preprint<br>
-      </p>
-      <div class="paper" id="zipvggt">
-      <a href="https://zipvggt.github.io/">Project</a> |
-      <!-- <a href="https://arxiv.org/abs/2512.00300">Paper</a> | -->
-      <a href="javascript:toggleblock('zipvggt_abs')">Abstract</a> 
-      <!-- <a shape="rect" href="javascript:togglebib('dynamicverse')" class="togglebib">Bibtex</a> |
-      <a href="https://www.youtube.com/watch?v=0h7XysIpG8Y">Video</a> |
-      <a href="https://huggingface.co/spaces/kairunwen/InstantSplat">HF Data</a> |
-      <a href="https://github.com/Dynamics-X/DynamicVerse">Code</a>  -->
+  }</pre></details></div>
+  </div>
+</article>
 
-    
-      <p align="justify"> <i id="zipvggt_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Streaming vision architectures have emerged as a powerful paradigm for embodied 4D spatial perception, enabling on-the-fly scene reconstruction. However, deploying these models in real-world infinite-horizon scenarios exposes a critical memory bottleneck: the unbounded accumulation of historical representations in the Key-Value (KV) cache. Existing token compression strategies attempt to mitigate this but suffer from decoupled, heuristic processing. They blindly aggregate tokens across physical boundaries, destroying high-frequency 3D geometry, and employ motion-blind eviction policies that erase the temporal trajectories of highly dynamic objects. <br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;To shatter this dilemma, we propose <strong>Zip-VGGT</strong>, the first object-centric spatiotemporal KV compression framework tailored for streaming vision models. Our core insight is to guide compression using high-level semantic and kinematic priors without introducing heavy computational overhead. Specifically, Zip-VGGT synergizes crisp 2D entity boundaries from a lightweight Segment Anything Model (SAM) with implicit 3D motion representations naturally encoded within the backbone's global attention layers. This enables object-bounded geometric spatial merging to fiercely preserve 3D topologies, alongside motion-aware temporal eviction that dynamically allocates cache budgets to retain interactive dynamic elements. Extensive experiments demonstrate that Zip-VGGT achieves huge compression ratios and inference speedups, successfully preventing memory explosion while maintaining high-fidelity 4D reconstruction for long-term embodied perception.</i></p>
-      
-
-         
-
-<pre xml:space="preserve">
-  @misc{wen2025dynamicverse,
-        title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling}, 
-        author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
-        year={2025},
-        eprint={2512.03000},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV},
-        url={https://arxiv.org/abs/2512.03000}, 
-    }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://dyn-bench.github.io/">
-    <img src="images/dynbench/Dynbench-teaser.png" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://dyn-bench.github.io/" id="DynamicBench">
-      <heading>Thinking in Dynamics: How Multimodal Large Language Models Perceive, Track, and Reason Dynamics in Physical 4D World</heading></a><br>
-      Yuzhi Huang*, <u>Kairun Wen*</u>, Rongxin Gao*, Dongxuan Liu, Yibin Lou, Jie Wu, Jing Xu, Jian Zhang, Zheng Yang, Yunlong Lin, Chenxin Li, Panwang Pan, Junbin Lu, Jingyan Jiang, Xinghao Ding, Yue Huang, Zhi Wang<br>
-      CVPR 2026<br>
-      </p>
-      <div class="paper" id="dynamicverse">
-      <a href="https://dyn-bench.github.io/">Project</a> |
-      <a href="https://arxiv.org/abs/2512.00300">Paper</a> |
-      <a href="javascript:toggleblock('dynamicbench_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('dynamicverse')" class="togglebib">Bibtex</a> |
-      <!-- <a href="https://www.youtube.com/watch?v=0h7XysIpG8Y">Video</a> | -->
-      <a href="https://huggingface.co/datasets/yu2hi13/Dyn-Bench">HF Data</a> |
-      <a href="https://github.com/Dynamics-X/Thinking-in-Dynamics">Code</a> 
-
-    
-      <p align="justify"> <i id="dynamicbench_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Humans inhabit a physical 4D world where geometric structure and semantic content evolve over time, constituting a dynamic 4D reality (spatial with temporal dimension). While current Multimodal Large Language Models(MLLMs) excel in static visual understanding, can they also be adept at “thinking in dynamics”, i.e., perceive, track and reason about spatio-temporal dynamics in evolving scenes? <br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;To systematically assess their spatio-temporal reasoning and localized dynamics perception capabilities, we introduce <strong>Dyn-Bench</strong>, a large-scale benchmark built from diverse real-world and synthetic video datasets, enabling robust and scalable evaluation of spatio-temporal understanding. Through multi-stage filtering from massive 2D and 4D data sources, Dyn-Bench provides a high-quality collection of dynamic scenes, comprising 1k videos, 7k visual question answering (VQA) pairs, and 3k dynamic object grounding pairs. We probe general, spatial and region-level MLLMs to express how they think in dynamics both linguistically and visually, and find that existing models cannot simultaneously maintain strong performance in both spatio-temporal reasoning and dynamic object grounding, often producing inconsistent interpretations of motion and interaction. Notably, conventional prompting strategies (e.g., chain-of-thought or caption-based hints) provide limited improvement, whereas structured integration approaches, including Mask-Guided Fusion and Spatio-Temporal Textual Cognitive Map (ST-TCM), significantly enhance MLLMs’ dynamics perception and spatio-temporal028reasoning in the physical 4D world.</i></p>
-
-
-<pre xml:space="preserve">
-  @misc{wen2025dynamicverse,
-        title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling}, 
-        author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
-        year={2025},
-        eprint={2512.03000},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV},
-        url={https://arxiv.org/abs/2512.03000}, 
-    }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://dynamic-verse.github.io/">
-    <video playsinline autoplay loop muted src="images/dynamicverse/DynamicVerse-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://dynamic-verse.github.io/" id="DynamicVerse">
-      <heading>DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling</heading></a><br>
-      <u>Kairun Wen*†</u>, Yuzhi Huang*, Runyu Chen, Hui Zheng, Yunlong Lin, Panwang Pan, Chenxin Li, Wenyan Cong, Jian Zhang, Junbin Lu, Chenguo Lin, Dilin Wang, Zhicheng Yan, Hongyu Xu, Justin Theiss, Yue Huang, Xinghao Ding, Rakesh Ranjan, Zhiwen Fan<br>
-      NeurIPS 2025<br>
-      </p>
-      <div class="paper" id="dynamicverse">
-      <a href="https://dynamic-verse.github.io/">Project</a> |
-      <a href="https://arxiv.org/abs/2512.00300">Paper</a> |      
-      <a href="javascript:toggleblock('dynamicverse_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('dynamicverse')" class="togglebib">Bibtex</a> |      
-      <a href="https://www.youtube.com/watch?v=0h7XysIpG8Y">Video</a> |
-      <a href="https://huggingface.co/datasets/kairunwen/DynamicVerse">HF Data</a> |
-      <a href="https://github.com/Dynamics-X/DynamicVerse">Code</a> 
-
-      
-
-      <p align="justify"> <i id="dynamicverse_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Understanding the dynamic physical world, characterized by its evolving 3D structure, real-world motion, and semantic content with textual descriptions, is crucial for human-agent interaction and enables embodied agents to perceive and act within real environments with human-like capabilities. However, existing datasets are often derived from limited simulators or utilize traditional Structurefrom-Motion for up-to-scale annotation and offer limited descriptive captioning, which restricts the capacity of foundation models to accurately interpret real-world dynamics from monocular videos, commonly sourced from the internet.<br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;To bridge these gaps, we introduce <strong>DynamicVerse</strong>, a physical-scale, multimodal 4D world modeling framework for dynamic real-world video. We employ large vision, geometric, and multimodal models to interpret metric-scale static geometry, real-world dynamic motion, instance-level masks, and holistic descriptive captions. By integrating window-based Bundle Adjustment with global optimization, our method converts long real-world video sequences into a comprehensive 4D multimodal format. DynamicVerse delivers a large-scale dataset consisting of 100K+ videos with 800K+ annotated masks and 10M+ frames from internet videos. Experimental evaluations on three benchmark tasks, namely video depth estimation, camera pose estimation, and camera intrinsics estimation, demonstrate that our 4D modeling achieves superior performance in capturing physical-scale measurements with greater global accuracy than existing methods.</i></p>
-
-<pre xml:space="preserve">
-  @misc{wen2025dynamicverse,
-        title={DynamicVerse: A Physically-Aware Multimodal Framework for 4D World Modeling}, 
-        author={Kairun Wen and Yuzhi Huang and Runyu Chen and Hui Zheng and Yunlong Lin and Panwang Pan and Chenxin Li and Wenyan Cong and Jian Zhang and Junbin Lu and Chenguo Lin and Dilin Wang and Zhicheng Yan and Hongyu Xu and Justin Theiss and Yue Huang and Xinghao Ding and Rakesh Ranjan and Zhiwen Fan},
-        year={2025},
-        eprint={2512.03000},
-        archivePrefix={arXiv},
-        primaryClass={cs.CV},
-        url={https://arxiv.org/abs/2512.03000}, 
-    }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-
-
-
-
-
-
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://instantsplat.github.io/">
-    <video playsinline autoplay loop muted src="images/instantsplat/InstantSplat-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://instantsplat.github.io/" id="InstantSplat">
-      <heading>InstantSplat: Sparse-view SfM-free Gaussian Splatting in Seconds</heading></a><br>
-      Zhiwen Fan*, <u>Kairun Wen*</u>, Wenyan Cong*, Kevin Wang, Jian Zhang, Xinghao Ding, Danfei Xu, Boris Ivanovic, Marco Pavone, Georgios Pavlakos, Zhangyang Wang, Yue Wang<br>
-      Preprint<br>
-      </p>
-      <div class="paper" id="instantsplat">
-      <a href="https://instantsplat.github.io/">Project</a> |
-      <a href="https://arxiv.org/abs/2403.20309">Paper</a> |      
-      <a href="javascript:toggleblock('instantsplat_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('instantsplat')" class="togglebib">Bibtex</a> |
-      
-      <a href="https://www.youtube.com/watch?v=_9aQHLHHoEM">Video</a> |
-      <a href="https://huggingface.co/spaces/kairunwen/InstantSplat">HF Demo</a> |
-      <a href="https://github.com/NVlabs/InstantSplat">Code [1600+⭐]</a> 
-
-      
-
-      <p align="justify"> <i id="instantsplat_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;While neural 3D reconstruction has advanced substantially, it typically requires densely captured multi-view data with carefully initialized poses (e.g., using COLMAP). However, this requirement limits its broader applicability, as Structure-from-Motion (SfM) is often unreliable in sparse-view scenarios where feature matches are limited, resulting in cumulative errors.<br>
-        
-        &nbsp;&nbsp;&nbsp;&nbsp;In this paper, we introduce <strong>InstantSplat</strong>, a novel and lightning-fast neural reconstruction system that builds accurate 3D representations from as few as 2-3 images. InstantSplat adopts a self-supervised framework that bridges the gap between 2D images and 3D representations using Gaussian Bundle Adjustment (GauBA) and can be optimized in an end-to-end manner. InstantSplat integrates dense stereo priors and co-visibility relationships between frames to initialize pixel-aligned geometry by progressively expanding the scene avoiding redundancy. Gaussian Bundle Adjustment is used to adapt both the scene representation and camera parameters quickly by minimizing gradient-based photometric error. Overall, InstantSplat achieves large-scale 3D reconstruction in mere seconds by reducing the required number of input views, and is compatible with multiple 3D representations (3D-GS, Mip-Splatting). It achieves an acceleration of over 20 times in reconstruction, improves visual quality (SSIM) from 0.3755 to 0.7624 than COLMAP with 3D-GS.</i></p>
-
-<pre xml:space="preserve">
-  @misc{fan2024instantsplat,
-    title={InstantSplat: Sparse-view Gaussian Splatting in Seconds},
-    author={Zhiwen Fan and Kairun Wen and Wenyan Cong and Kevin Wang and Jian Zhang and Xinghao Ding and Danfei Xu and Boris Ivanovic and Marco Pavone and Georgios Pavlakos and Zhangyang Wang and Yue Wang},
-    year={2024},
-    eprint={2403.20309},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://cvpr2025-jarvisir.github.io/">
-    <video playsinline autoplay loop muted src="images/javisir/jarvisIR-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://cvpr2025-jarvisir.github.io/" id="JarvisIR">
-      <heading>JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration</heading></a><br>
-      Yunlong Lin*, Zixu Lin*, Haoyu Chen*, Panwang Pan*, Chenxin Li, Sixiang Chen, <u>Kairun Wen</u>, Yeying Jin, Wenbo Li, Xinghao Ding <br>
-      CVPR 2025 <br>
-      </p>
-
-      <div class="paper" id="javisir">
-      <a href="https://cvpr2025-jarvisir.github.io/">Project</a> |
-      <a href="https://lyl1015.github.io/papers/CVPR2025_JarvisIR.pdf">Paper</a> |
-      <a href="javascript:toggleblock('javisir_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('javisir')" class="togglebib">Bibtex</a> | 
-      <a href="https://github.com/LYL1015/JarvisIR">Code</a>
-      
-
-      <p align="justify"> <i id="javisir_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Vision-centric perception systems struggle with unpredictable and coupled weather degradations in the wild. Current solutions are often limited, as they either depend on specific degradation priors or suffer from significant domain gaps. To enable robust and operation in real-world conditions, we propose <strong><span style="color: rgb(32, 146, 228);">JarvisIR</span></strong>, a VLM-powered agent that leverages the VLM as a controller to manage multiple expert restoration models. To further enhance system robustness, reduce hallucinations, and improve generalizability in real-world adverse weather, JarvisIR employs a novel two-stage framework consisting of supervised fine-tuning and human feedback alignment. Specifically, to address the lack of paired data in real-world scenarios, the human feedback alignment enables the VLM to be fine-tuned effectively on large-scale real-world data in an unsupervised manner. To support the training and evaluation of JarvisIR, we introduce CleanBench, a comprehensive dataset consisting of high-quality and large-scale instruction-responses pairs, including 150K synthetic entries and 80K real entries. Extensive experiments demonstrate that JarvisIR exhibits superior decision-making and restoration capabilities. Compared with existing methods, it achieves a 50% improvement in the average of all perception metrics on CleanBench-Real.
-      </i></p>
-
-<pre xml:space="preserve">
-  @inproceedings{jarvisir2025,
+<article class="publication" id="JarvisIR" aria-labelledby="title-JarvisIR">
+  <div class="publication-media"><video controls playsinline muted loop preload="metadata" aria-label="JarvisIR preview"><source src="images/javisir/jarvisIR-preview.mp4" type="video/mp4"><a href="images/javisir/jarvisIR-preview.mp4">Watch the JarvisIR preview</a></video></div>
+  <div class="publication-copy">
+    <p class="venue">CVPR 2025</p>
+    <h3 id="title-JarvisIR"><a href="https://cvpr2025-jarvisir.github.io/">JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration</a></h3>
+    <p class="authors">Yunlong Lin*, Zixu Lin*, Haoyu Chen*, Panwang Pan*, Chenxin Li, Sixiang Chen, <u>Kairun Wen</u>, Yeying Jin, Wenbo Li, Xinghao Ding</p>
+    <nav class="paper-links" aria-label="JarvisIR resources"><a href="https://cvpr2025-jarvisir.github.io/">Project</a>
+<a href="https://lyl1015.github.io/papers/CVPR2025_JarvisIR.pdf">Paper</a>
+<a href="https://github.com/LYL1015/JarvisIR">Code</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="javisir_abs"> Vision-centric perception systems struggle with unpredictable and coupled weather degradations in the wild. Current solutions are often limited, as they either depend on specific degradation priors or suffer from significant domain gaps. To enable robust and operation in real-world conditions, we propose <strong><span>JarvisIR</span></strong>, a VLM-powered agent that leverages the VLM as a controller to manage multiple expert restoration models. To further enhance system robustness, reduce hallucinations, and improve generalizability in real-world adverse weather, JarvisIR employs a novel two-stage framework consisting of supervised fine-tuning and human feedback alignment. Specifically, to address the lack of paired data in real-world scenarios, the human feedback alignment enables the VLM to be fine-tuned effectively on large-scale real-world data in an unsupervised manner. To support the training and evaluation of JarvisIR, we introduce CleanBench, a comprehensive dataset consisting of high-quality and large-scale instruction-responses pairs, including 150K synthetic entries and 80K real entries. Extensive experiments demonstrate that JarvisIR exhibits superior decision-making and restoration capabilities. Compared with existing methods, it achieves a 50% improvement in the average of all perception metrics on CleanBench-Real. </div></details><details><summary>BibTeX</summary><pre>@inproceedings{jarvisir2025,
     title={JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration},
     author={Lin, Yunlong and Lin, Zixu and Chen, Haoyu and Pan, Panwang and Li, Chenxin and Chen, Sixiang and Kairun, Wen and Jin, Yeying and Li, Wenbo and Ding, Xinghao},
     booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     year={2025}
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
+  }</pre></details></div>
+  </div>
+</article>
 
-
-
-
-
-
-
-
-
-
-
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://lightgaussian.github.io/">
-    <video playsinline autoplay loop muted src="images/lightgaussian/LightGaussian-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://lightgaussian.github.io/" id="LightGaussian">
-      <heading>LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS</heading></a><br>
-      Zhiwen Fan*, Kevin Wang*, <u>Kairun Wen</u>, Zehao Zhu, Dejia Xu, Zhangyang Wang <br>
-      NeurIPS 2024 <b style="color:rgb(255, 100, 100);">(Spotlight)</b><br>
-      </p> 
-      <div class="paper" id="lightgaussian">
-      <a href="https://lightgaussian.github.io/">Project</a> |
-      <a href="https://arxiv.org/abs/2311.17245">Paper</a> |
-      <a href="javascript:toggleblock('lightgaussian_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('lightgaussian')" class="togglebib">Bibtex</a> |
-      <a href="https://www.youtube.com/watch?v=470hul75bSM&feature=youtu.be">Video</a> |
-      <a href="https://github.com/VITA-Group/LightGaussian">Code [700+⭐]</a> 
-
-      <p align="justify"> <i id="lightgaussian_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Recent advancements in real-time neural rendering using point-based techniques have paved the way for the widespread adoption of 3D representations. However, foundational approaches like 3D Gaussian Splatting come with a substantial storage overhead caused by growing the Structure-from-Motion (SfM) points to millions, often demanding gigabyte-level disk space for a single unbounded scene, posing significant scalability challenges and hindering the splatting efficiency.<br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;To address this challenge, we introduce <strong>LightGaussian</strong>, a novel method designed to transform 3D Gaussians into a more efficient and compact format. Drawing inspiration from the concept of Network Pruning, LightGaussian identifies Gaussians that are insignificant in contributing to the scene reconstruction and adopts a pruning and recovery process, effectively reducing redundancy in Gaussian counts while preserving visual effects. 
-        Additionally, LightGaussian employs knowledge distillation and pseudo-view augmentation to transfer spherical harmonics coefficients to a lower degree, allowing knowledge convert to more compact representations.
-        LightGaussian also proposes a Gaussian Vector Quantization based on Gaussian global significance, to quantize all redundant attributes, resulting in lower bitwidth representations with minimal accuracy losses.<br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;In summary, LightGaussian achieves an average <strong>compression rate exceeding 15x</strong> while boosting the <strong>FPS from 144 to 237</strong> on the representative 3D-GS framework, thereby supporting an efficient representation of complex scenes on Mip-NeRF 360 and Tank \& Temple datasets. The proposed Gaussian pruning approach can also be adapted to other representations (e.g., Scaffold-GS), demonstrating its generalization capability.</i></p>
-
-<pre xml:space="preserve">
-  @misc{fan2023lightgaussian, 
-    title={LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS}, 
-    author={Zhiwen Fan and Kevin Wang and Kairun Wen and Zehao Zhu and Dejia Xu and Zhangyang Wang}, 
+<article class="publication" id="LightGaussian" aria-labelledby="title-LightGaussian">
+  <div class="publication-media"><video controls playsinline muted loop preload="metadata" aria-label="LightGaussian preview"><source src="images/lightgaussian/LightGaussian-preview.mp4" type="video/mp4"><a href="images/lightgaussian/LightGaussian-preview.mp4">Watch the LightGaussian preview</a></video></div>
+  <div class="publication-copy">
+    <p class="venue">NeurIPS 2024 <b>(Spotlight)</b></p>
+    <h3 id="title-LightGaussian"><a href="https://lightgaussian.github.io/">LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS</a></h3>
+    <p class="authors">Zhiwen Fan*, Kevin Wang*, <u>Kairun Wen</u>, Zehao Zhu, Dejia Xu, Zhangyang Wang</p>
+    <nav class="paper-links" aria-label="LightGaussian resources"><a href="https://lightgaussian.github.io/">Project</a>
+<a href="https://arxiv.org/abs/2311.17245">Paper</a>
+<a href="https://www.youtube.com/watch?v=470hul75bSM&feature=youtu.be">Video</a>
+<a href="https://github.com/VITA-Group/LightGaussian">Code [700+⭐]</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="lightgaussian_abs"> Recent advancements in real-time neural rendering using point-based techniques have paved the way for the widespread adoption of 3D representations. However, foundational approaches like 3D Gaussian Splatting come with a substantial storage overhead caused by growing the Structure-from-Motion (SfM) points to millions, often demanding gigabyte-level disk space for a single unbounded scene, posing significant scalability challenges and hindering the splatting efficiency.<br/> To address this challenge, we introduce <strong>LightGaussian</strong>, a novel method designed to transform 3D Gaussians into a more efficient and compact format. Drawing inspiration from the concept of Network Pruning, LightGaussian identifies Gaussians that are insignificant in contributing to the scene reconstruction and adopts a pruning and recovery process, effectively reducing redundancy in Gaussian counts while preserving visual effects. Additionally, LightGaussian employs knowledge distillation and pseudo-view augmentation to transfer spherical harmonics coefficients to a lower degree, allowing knowledge convert to more compact representations. LightGaussian also proposes a Gaussian Vector Quantization based on Gaussian global significance, to quantize all redundant attributes, resulting in lower bitwidth representations with minimal accuracy losses.<br/> In summary, LightGaussian achieves an average <strong>compression rate exceeding 15x</strong> while boosting the <strong>FPS from 144 to 237</strong> on the representative 3D-GS framework, thereby supporting an efficient representation of complex scenes on Mip-NeRF 360 and Tank \&amp; Temple datasets. The proposed Gaussian pruning approach can also be adapted to other representations (e.g., Scaffold-GS), demonstrating its generalization capability.</div></details><details><summary>BibTeX</summary><pre>@misc{fan2023lightgaussian,
+    title={LightGaussian: Unbounded 3D Gaussian Compression with 15x Reduction and 200+ FPS},
+    author={Zhiwen Fan and Kevin Wang and Kairun Wen and Zehao Zhu and Dejia Xu and Zhangyang Wang},
     year={2023},
     eprint={2311.17245},
     archivePrefix={arXiv},
-    primaryClass={cs.CV} 
-  }
-</pre>
-      </div>
-    </td>
-  </tr>
+    primaryClass={cs.CV}
+  }</pre></details></div>
+  </div>
+</article>
 
-  
-
-  <tr>
-    <td width="40%" valign="top" align="center"><a href="https://largespatialmodel.github.io/">
-    <video playsinline autoplay loop muted src="images/largespatialmodel/LargeSpatialModel-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://largespatialmodel.github.io/" id="LSM">
-      <heading>Large Spatial Model: End-to-end Unposed Images to Semantic 3D</heading></a><br>
-      Zhiwen Fan*,  Jian Zhang*,  Wenyan Cong,  Peihao Wang,  Renjie Li,  <u>Kairun Wen</u>,  Shijie Zhou,  Achuta Kadambi,  Zhangyang Wang,  Danfei Xu,  Boris Ivanovic,  Marco Pavone,  Yue Wang<br>
-      NeurIPS 2024<br>
-      </p>
-
-      <div class="paper" id="lsm">
-      <a href="https://largespatialmodel.github.io/">Project</a> |
-      <a href="https://arxiv.org/abs/2410.18956">Paper</a> |
-      <a href="javascript:toggleblock('lsm_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('lsm')" class="togglebib">Bibtex</a> |       
-      <a href="https://github.com/NVlabs/LSM">Code</a> |
-      <a href="https://huggingface.co/spaces/kairunwen/LSM">HF Demo</a> 
-
-      <p align="justify"> <i id="lsm_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Reconstructing and understanding 3D structures from a limited number of images is a classical problem in computer vision. Traditional approaches typically decompose this task into multiple subtasks, involving several stages of complex mappings between different data representations. For example, dense reconstruction using Structure-from-Motion (SfM) requires transforming images into key points, optimizing camera parameters, and estimating structures. Following this, accurate sparse reconstructions are necessary for further dense modeling, which is then input into task-specific neural networks. This multi-stage paradigm leads to significant processing times and engineering complexity.<br>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;In this work, we introduce the <strong><span style="color: rgb(32, 146, 228);">L</span>arge <span style="color: rgb(32, 146, 228);">S</span>patial <span style="color: rgb(32, 146, 228);">M</span>odel (LSM)</strong>, which directly processes unposed RGB images into semantic radiance fields. LSM simultaneously estimates geometry, appearance, and semantics in a single feed-forward pass and can synthesize versatile label maps by interacting through language at novel views. Built on a general Transformer-based framework, LSM integrates global geometry via pixel-aligned point maps. To improve spatial attribute regression, we adopt local context aggregation with multi-scale fusion, enhancing the accuracy of fine local details. To address the scarcity of labeled 3D semantic data and enable natural language-driven scene manipulation, we incorporate a pre-trained 2D language-based segmentation model into a 3D-consistent semantic feature field. An efficient decoder parameterizes a set of semantic anisotropic Gaussians, allowing supervised end-to-end learning. Comprehensive experiments on various tasks demonstrate that LSM unifies multiple 3D vision tasks directly from unposed images, achieving real-time semantic 3D reconstruction for the first time.</i></p>
-
-<pre xml:space="preserve">
-  @misc{fan2024largespatialmodelendtoend,
-    title={Large Spatial Model: End-to-end Unposed Images to Semantic 3D}, 
+<article class="publication" id="LSM" aria-labelledby="title-LSM">
+  <div class="publication-media"><video controls playsinline muted loop preload="metadata" aria-label="Large Spatial Model preview"><source src="images/largespatialmodel/LargeSpatialModel-preview.mp4" type="video/mp4"><a href="images/largespatialmodel/LargeSpatialModel-preview.mp4">Watch the Large Spatial Model preview</a></video></div>
+  <div class="publication-copy">
+    <p class="venue">NeurIPS 2024</p>
+    <h3 id="title-LSM"><a href="https://largespatialmodel.github.io/">Large Spatial Model: End-to-end Unposed Images to Semantic 3D</a></h3>
+    <p class="authors">Zhiwen Fan*, Jian Zhang*, Wenyan Cong, Peihao Wang, Renjie Li, <u>Kairun Wen</u>, Shijie Zhou, Achuta Kadambi, Zhangyang Wang, Danfei Xu, Boris Ivanovic, Marco Pavone, Yue Wang</p>
+    <nav class="paper-links" aria-label="Large Spatial Model resources"><a href="https://largespatialmodel.github.io/">Project</a>
+<a href="https://arxiv.org/abs/2410.18956">Paper</a>
+<a href="https://github.com/NVlabs/LSM">Code</a>
+<a href="https://huggingface.co/spaces/kairunwen/LSM">HF Demo</a></nav>
+    <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="lsm_abs"> Reconstructing and understanding 3D structures from a limited number of images is a classical problem in computer vision. Traditional approaches typically decompose this task into multiple subtasks, involving several stages of complex mappings between different data representations. For example, dense reconstruction using Structure-from-Motion (SfM) requires transforming images into key points, optimizing camera parameters, and estimating structures. Following this, accurate sparse reconstructions are necessary for further dense modeling, which is then input into task-specific neural networks. This multi-stage paradigm leads to significant processing times and engineering complexity.<br/> In this work, we introduce the <strong><span>L</span>arge <span>S</span>patial <span>M</span>odel (LSM)</strong>, which directly processes unposed RGB images into semantic radiance fields. LSM simultaneously estimates geometry, appearance, and semantics in a single feed-forward pass and can synthesize versatile label maps by interacting through language at novel views. Built on a general Transformer-based framework, LSM integrates global geometry via pixel-aligned point maps. To improve spatial attribute regression, we adopt local context aggregation with multi-scale fusion, enhancing the accuracy of fine local details. To address the scarcity of labeled 3D semantic data and enable natural language-driven scene manipulation, we incorporate a pre-trained 2D language-based segmentation model into a 3D-consistent semantic feature field. An efficient decoder parameterizes a set of semantic anisotropic Gaussians, allowing supervised end-to-end learning. Comprehensive experiments on various tasks demonstrate that LSM unifies multiple 3D vision tasks directly from unposed images, achieving real-time semantic 3D reconstruction for the first time.</div></details><details><summary>BibTeX</summary><pre>@misc{fan2024largespatialmodelendtoend,
+    title={Large Spatial Model: End-to-end Unposed Images to Semantic 3D},
     author={Zhiwen Fan and Jian Zhang and Wenyan Cong and Peihao Wang and Renjie Li and Kairun Wen and Shijie Zhou and Achuta Kadambi and Zhangyang Wang and Danfei Xu and Boris Ivanovic and Marco Pavone and Yue Wang},
     year={2024},
     eprint={2410.18956},
     archivePrefix={arXiv},
     primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2410.18956}, 
-  }
-</pre>
+    url={https://arxiv.org/abs/2410.18956},
+  }</pre></details></div>
+  </div>
+</article>
+  </section>
+  <section class="projects" id="projects" aria-labelledby="projects-title">
+    <header class="section-heading"><div><p class="eyebrow">OPEN SOURCE</p><h2 id="projects-title">Projects.</h2></div></header>
+    <article class="project publication">
+      <a class="publication-media" href="https://kairunwen.github.io/Awesome-Robot-Use-Agent/"><img src="images/awesome-rua/preview.png" alt="Awesome Robot Use Agent project preview: a robot arm petting a cat, with resource categories" width="843" height="519" loading="lazy"></a>
+      <div class="publication-copy">
+      <h3><a href="https://kairunwen.github.io/Awesome-Robot-Use-Agent/">Awesome Robot Use Agent</a></h3>
+      <p class="project-description">A curated collection of papers, research articles, open-source tools, benchmarks, and community demos for Robot-Use Agents.</p>
+      <div class="paper-links"><a href="https://kairunwen.github.io/Awesome-Robot-Use-Agent/">Project</a><a href="https://github.com/kairunwen/Awesome-Robot-Use-Agent">Code</a></div>
+      <div class="paper-details"><details><summary>Abstract</summary><div class="abstract" id="awesome-rua-abstract">A robot-use agent is an AI system that reasons about user-specified goals, plans actions, and acts in the physical world by using robots as tools through available skills and perception/control interfaces. It uses observations and execution feedback to assess progress, adjust plans, and attempt recovery from failures.</div></details><details><summary>BibTeX</summary><pre>@misc{awesome-robot-use-agent,
+  title   = {Awesome Robot Use Agent},
+  author  = {Kairun Wen and {Awesome Robot Use Agent Contributors}},
+  journal = {GitHub repository},
+  url     = {https://github.com/kairunwen/Awesome-Robot-Use-Agent},
+  year    = {2026},
+  note    = {A curated collection of resources for robot-use agents.}
+}</pre></details></div>
       </div>
-    </td>
-  </tr>
-
-
-
-
-
-
-
-
-  <!-- <tr>
-    <td width="40%" valign="top" align="center"><a href="https://github.com/dplut/dplut.github.io">
-    <video playsinline autoplay loop muted src="images/dplut/DPLUT-preview.mp4" poster="./images/loading-icon.gif" alt="sym" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
-    </a></td>
-    <td width="60%" valign="top">
-      <p><a href="https://github.com/dplut/dplut.github.io" id="DPLUT">
-      <heading>Unsupervised Low-light Image Enhancement with Lookup Tables and Diffusion Priors</heading></a><br>
-      Yunlong Lin*, Zhenqi Fu*, <u>Kairun Wen</u>, Tian Ye, Sixiang Chen, Ge Meng, Yingying Wang, Yue Huang, Xiaotong Tu, Xinghao Ding <br>
-      AAAI 2024 <br>
-      </p>
-
-      <div class="paper" id="dplut">
-      <a href="https://github.com/dplut/dplut.github.io">Project</a> |
-      <a href="https://arxiv.org/abs/2409.18899">Paper</a> |
-      <a href="javascript:toggleblock('dplut_abs')">Abstract</a> |
-      <a shape="rect" href="javascript:togglebib('dplut')" class="togglebib">Bibtex</a> | 
-      <a href="https://github.com/LYL1015/DPLUT">Code</a>
-
-
-      <p align="justify"> <i id="dplut_abs">
-        &nbsp;&nbsp;&nbsp;&nbsp;Low-light image enhancement (LIE) aims at precisely and efficiently recovering an image degraded in poor illumination environments. Recent advanced LIE techniques are using deep neural networks, which require lots of low-normal light image pairs, network parameters, and computational resources. As a result, their practicality is limited. In this work, we devise a novel unsupervised LIE framework based on <strong><span style="color: rgb(32, 146, 228);">D</span>iffusion <span style="color: rgb(32, 146, 228);">P</span>riors and <span style="color: rgb(32, 146, 228);">L</span>ook<span style="color: rgb(32, 146, 228);">U</span>p <span style="color: rgb(32, 146, 228);">T</span>ables (DPLUT)</strong> to achieve efficient low-light image recovery. The proposed approach comprises two critical components: a light adjustment lookup table (LLUT) and a noise suppression lookup table (NLUT). LLUT is optimized with a set of unsupervised losses. It aims at predicting pixelwise curve parameters for the dynamic range adjustment of a specific image. NLUT is designed to remove the amplified noise after the light brightens. As diffusion models are sensitive to noise, diffusion priors are introduced to achieve high-performance noise suppression. Extensive experiments demonstrate that our approach outperforms state-of-the-art methods in terms of visual quality and efficiency.
-      </i></p>
-
-<pre xml:space="preserve">
-  @misc{lin2024unsupervisedlowlightimageenhancement,
-    title={Unsupervised Low-light Image Enhancement with Lookup Tables and Diffusion Priors}, 
-    author={Yunlong Lin and Zhenqi Fu and Kairun Wen and Tian Ye and Sixiang Chen and Ge Meng and Yingying Wang and Yue Huang and Xiaotong Tu and Xinghao Ding},
-    year={2024},
-    eprint={2409.18899},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV},
-    url={https://arxiv.org/abs/2409.18899}, 
-  }
-</pre>
-      </div>
-    </td>
-  </tr> -->
-
-
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Honors & Awards</sectionheading></td></tr>
-</table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-  <tr>
-    <td style="padding:20px;width:100%;vertical-align:middle">
-      National Scholarship <strong>(Top 0.2% Nationwide)</strong>, 2022 
-      <br>
-      National Scholarship <strong>(Top 0.2% Nationwide)</strong>, 2020
-      </p>
-    </td>
-  </tr>
-</table>
-
-
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Reviewer Services</sectionheading></td></tr>
-</table>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
-  <tr>
-    <td style="padding:20px;width:100%;vertical-align:middle">
-      International Conference on Machine Learning <b>(ICML)</b>, 2025
-      <br>
-      International Conference on Learning Representations <b>(ICLR)</b>, 2026, 2025
-      <br>
-      Conference on Neural Information Processing Systems <b>(NeurIPS)</b>, 2025, 2024
-      <br>
-      SIGGRAPH Asia, 2026
-      <br>
-      AAAI Conference on Artificial Intelligence <b>(AAAI)</b>, 2026
-      </p>
-    </td>
-  </tr>
-</table>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody>
-      <tr>
-          <td style="padding:0px">
-              <br><br>
-              <div>
-                <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=tt&d=XA3g-twJ0DTL724FmmOYYY49GazZpsWPVMvjlU6nZjc&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353'></script>
-              </div>
-          </td>
-      </tr>
-  </tbody>
-</table>
-
-
-
-
-
-
-
-
-<hr/>
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="2">
-    <tr><td><br><p align="right">
-    Website template from <a href="http://www.cs.berkeley.edu/~barron/">here</a> and <a href="https://tairanhe.com/">here</a>
-    </font></p></td></tr>
-</table>
-
-  </td></tr>
-</table>
-<script xml:space="preserve" language="JavaScript">
-hideallbibs();
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('material_review_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('ieee_iot_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('acm_turc_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('aog_mcts_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('pragmatics_marl_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('collab_marl_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('rma_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('energyloco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('navloco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('lsm_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('lightgaussian_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('instantsplat_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('dynamicverse_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('zipvggt_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('dynamicbench_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('sam3r_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('dplut_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('javisir_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('agile-but-safe_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('safedpa_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('acs_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('saferl_survey_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('patchail_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('sisos_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('uaissa_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('autocost_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('a2ls_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('issa_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('ebil_abs');
-</script>
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('maniploco_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('parkour_abs');
-</script>
-<script xml:space="preserve" language="JavaScript">
-  hideblock('mobile_aloha_abs');
-</script>
+    </article>
+  </section>
+  <div class="background-grid">
+    <section id="service" aria-labelledby="service-title"><p class="eyebrow">COMMUNITY</p><h2 id="service-title">Reviewer services.</h2><ul><li>International Conference on Machine Learning <b>(ICML)</b>, 2025</li>
+<li>International Conference on Learning Representations <b>(ICLR)</b>, 2026, 2025</li>
+<li>Conference on Neural Information Processing Systems <b>(NeurIPS)</b>, 2025, 2024</li>
+<li>AAAI Conference on Artificial Intelligence <b>(AAAI)</b>, 2026</li>
+<li>SIGGRAPH Asia, 2026</li></ul></section>
+    <section id="awards" aria-labelledby="awards-title"><p class="eyebrow">RECOGNITION</p><h2 id="awards-title">Honors &amp; awards.</h2><ul><li>National Scholarship <strong>(Top 0.2% Nationwide)</strong>, 2022</li>
+<li>National Scholarship <strong>(Top 0.2% Nationwide)</strong>, 2020</li></ul></section>
+  </div>
+</main>
+<footer class="shell">
+  <div class="footer-content"><a class="footer-name" href="#top">Kairun Wen <span lang="zh">· 温凯润</span></a><p>Robot-use Agent · Embodied Foundation Model · Spatial intelligence</p><p class="page-views" title="Homepage views · Google Analytics"><span aria-hidden="true">◉</span> Views <span id="page-views" aria-live="polite">—</span></p></div>
+  <a class="back-to-top" href="#top" aria-label="Back to top" title="Back to top"><span aria-hidden="true">↑</span></a>
+  <div class="visitor-map" aria-label="Visitor map"><script id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?cl=716457&amp;w=300&amp;t=tt&amp;d=XA3g-twJ0DTL724FmmOYYY49GazZpsWPVMvjlU6nZjc&amp;co=f5efe3&amp;ct=716457&amp;cmo=965021&amp;cmn=e8aa68" async></script></div>
+</footer>
 </body>
-
 </html>
