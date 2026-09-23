@@ -30,7 +30,8 @@ h2 { margin: 0; font: 600 42px/1.1 var(--display); letter-spacing: -.025em; }
 }
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid #bba08b42; box-shadow: 0 2px 8px #1a0c081a; }
 .topbar { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: flex; align-items: center; gap: 8px; color: var(--cream); font: 400 22px/1.2 Georgia, "Times New Roman", serif; white-space: nowrap; }
+.brand { display: flex; align-items: center; gap: 8px; color: var(--cream); font: 600 22px/1.2 Georgia, "Times New Roman", serif; white-space: nowrap; }
+.brand-nickname { font-size: 85%; font-weight: 400; color: #cbbfb3; }
 .brand img { width: 28px; height: 28px; flex-shrink: 0; object-fit: contain; }
 .topbar nav { display: flex; align-items: center; gap: 26px; }
 .topbar nav a { color: #e1d2c0; border-bottom: 1px solid transparent; padding: 10px 0; font: 400 15px/1.5 Georgia, "Times New Roman", serif; }
