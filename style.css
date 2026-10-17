@@ -98,7 +98,7 @@ pre { max-width: 100%; overflow-x: auto; padding: 18px; background: var(--paper)
 .background-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 65px; border-top: 1px solid var(--line); margin-top: 14px; padding-top: 28px; }
 .background-grid h2 { font-size: 34px; }
 .background-grid ul { list-style: none; padding: 0; margin-top: 16px; font-size: 16px; color: var(--muted); }
-#service ul { font-size: 15px; }
+#service ul { font-size: 14px; }
 .background-grid li { margin: 8px 0; }
 .background-grid strong, .background-grid b { color: var(--ink); font-weight: 600; }
 footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 24px !important; padding-block: 20px; border-top: 1px solid var(--line); }
