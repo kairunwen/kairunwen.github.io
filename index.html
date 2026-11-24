@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=service-20261017">
+  <link rel="stylesheet" href="style.css?v=dynamics-claw-cover-inset">
   <script src="js/analytics.js" defer></script>
   <script src="js/navigation.js" defer></script>
 </head>
@@ -58,10 +58,46 @@
 <li><time datetime="2024-09">2024.09</time><span>Two papers (<a href="https://lightgaussian.github.io/">LightGaussian</a> and <a href="https://papers.neurips.cc/paper_files/paper/2024/hash/46fd43174b82660f24e3ba11cf5e1340-Abstract-Conference.html">Large Spatial Model</a>) were accepted to NeurIPS'24, with LightGaussian selected for a <strong>Spotlight</strong> presentation 🎉!</span></li></ul></section>
   <section class="publications" id="publications" aria-labelledby="publications-title">
     <header class="section-heading"><div><p class="eyebrow">THE RESEARCH</p><h2 id="publications-title">Publications.</h2></div><p>* Equal contribution &nbsp; · &nbsp; † Project lead</p></header>
+    <article class="publication" id="Dynamics-Claw" aria-labelledby="title-Dynamics-Claw">
+  <div class="publication-media">
+    <video controls playsinline muted loop preload="metadata" poster="images/dynamics-claw/teaser.webp" aria-label="Dynamics-Claw preview">
+      <source src="images/dynamics-claw/Dynamics-Claw-preview.mp4" type="video/mp4">
+      <a href="images/dynamics-claw/Dynamics-Claw-preview.mp4">Watch the Dynamics-Claw preview</a>
+    </video>
+  </div>
+  <div class="publication-copy">
+    <p class="venue">Preprint 2026</p>
+    <h3 id="title-Dynamics-Claw"><a href="https://dynamics-claw.pages.dev/">Dynamics-Claw: Harnessing Streaming Video in the Physical 4D World</a></h3>
+    <p class="authors">Runyu Chen, Peiwei Lin, Gaohui Liang, Li Luo, Liang Fan, Rongxin Gao, Xiaotong Tu, Yue Huang, Yuzhi Huang, Xinghao Ding,<br><u>Kairun&nbsp;Wen†</u></p>
+    <nav class="paper-links" aria-label="Dynamics-Claw resources"><a href="https://dynamics-claw.pages.dev/">Project</a></nav>
+    <div class="paper-details">
+      <details>
+        <summary>Abstract</summary>
+        <div class="abstract">Dynamics-Claw is an agentic framework for understanding streaming egocentric video in the physical 4D world. As video arrives, it updates a 4D state graph that links persistent object identities to spatial states, interaction events, and visual evidence over time. A vision-language model queries this graph to answer questions about how objects moved, what happened to them, and where they are now, even after they leave view.</div>
+      </details>
+    </div>
+  </div>
+</article>
+
+    <article class="publication" id="ProactiveBrain" aria-labelledby="title-ProactiveBrain">
+  <div class="publication-media"><img src="images/proactivebrain/teaser.webp" alt="ProactiveBrain tracks physical states in first-person video, third-person interactions, and robotic manipulation." width="1200" height="600" loading="lazy"></div>
+  <div class="publication-copy">
+    <p class="venue">Preprint 2026</p>
+    <h3 id="title-ProactiveBrain">ProactiveBrain: Physical Interaction Reasoning in Streaming Video for Embodied Agents</h3>
+    <p class="authors">Lihuang Fang*, <u>Kairun Wen*</u>, Victor Shea-Jay Huang, Wenyan Cong, Yu Gui, Yuchen Zou, Mingda Jia, Yuzhi Huang, Hongsheng Li, Hong Zhang</p>
+    <div class="paper-details">
+      <details>
+        <summary>Abstract</summary>
+        <div class="abstract">ProactiveBrain estimates physical states from streaming video and updates its memory as new evidence arrives. A Physical Surprise Model detects task-relevant changes across frames, and a Physical Adapter combines this evidence with a vision-language model’s visual features. The resulting state feedback helps embodied agents decide when to continue, adjust, or retry an action. ProactiveBrain-Bench evaluates physical-state estimation and memory maintenance under continuous observations.</div>
+      </details>
+    </div>
+  </div>
+</article>
+
     <article class="publication" id="zipvggt" aria-labelledby="title-zipvggt">
   <div class="publication-media"><a href="https://zipvggt.github.io/" tabindex="-1" aria-hidden="true"><img src="images/zipvggt/Zip-VGGT.png" alt="Zip-VGGT overview" loading="lazy"></a></div>
   <div class="publication-copy">
-    <p class="venue">Preprint</p>
+    <p class="venue">Preprint 2026</p>
     <h3 id="title-zipvggt"><a href="https://zipvggt.github.io/">Zip-VGGT: Object-Centric Spatiotemporal KV Compression for Streaming Vision Transformers</a></h3>
     <p class="authors"><u>Kairun Wen*†</u>, Runyu Chen*, Wenyan Cong*, Peiwei Lin, Tao Lu, Lihan Jiang, Weiguang Zhao, Junting Dong, Yunlong Lin, Yuzhi Huang, Xinghao Ding, Hongsheng Li, Linning Xu, Mulin Yu</p>
     <nav class="paper-links" aria-label="Zip-VGGT resources"><a href="https://zipvggt.github.io/">Project</a></nav>

@@ -41,9 +41,9 @@ class SiteCheck(HTMLParser):
 page = SiteCheck()
 page.feed((ROOT / 'index.html').read_text())
 assert set(page.anchors + page.labels) <= page.ids, 'Missing anchor or heading'
-assert page.publications == 7 and page.abstracts == 8
-assert page.videos == 5
-print('PASS: 7 publications, 8 abstracts, 5 accessible videos; unique IDs and valid local links.')
+assert page.publications == 9 and page.abstracts == 10
+assert page.videos == 6
+print('PASS: 9 publications, 10 abstracts, 6 accessible videos; unique IDs and valid local links.')
 
 from scripts.update_views import view_count
 headers = {"metricHeaders": [{"name": "screenPageViews", "type": "TYPE_INTEGER"}]}

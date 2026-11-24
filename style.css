@@ -73,6 +73,16 @@ main { line-height: 1.65; }
 .publication { display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 32px; padding-block: 22px; border-top: 1px solid var(--line); }
 .publication-media { align-self: start; margin-top: 4px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; background: var(--paper); }
 .publication-media img, .publication-media video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 10; object-fit: contain; }
+#Dynamics-Claw .publication-media { position: relative; }
+#Dynamics-Claw .publication-media::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  background: url("images/dynamics-claw/teaser.webp") center / cover no-repeat;
+  filter: blur(14px);
+  opacity: .5;
+}
+#Dynamics-Claw video { position: relative; object-position: center 8%; }
 .publication-copy { min-width: 0; }
 .venue { margin: 0 0 5px; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .035em; }
 .venue b { color: var(--accent); }
