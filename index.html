@@ -97,7 +97,7 @@
     <article class="publication" id="Pros4D" aria-labelledby="title-Pros4D">
   <div class="publication-media">
     <video controls playsinline muted loop preload="none" poster="images/pros4d/teaser.webp" aria-label="Pros4D research film">
-      <source src="https://pros4d.github.io/assets/pros4d-film.mp4" type="video/mp4">
+      <source src="images/pros4d/Pros4D-preview.mp4" type="video/mp4">
       <a href="https://pros4d.github.io/assets/pros4d-film.mp4">Watch the Pros4D research film</a>
     </video>
   </div>
@@ -299,14 +299,14 @@
     playButton.className = 'publication-play';
     playButton.setAttribute('aria-label', 'Play ' + video.getAttribute('aria-label'));
     playButton.addEventListener('click', async () => {
+      video.controls = true;
+      if (document.activeElement === playButton) video.focus();
+      playButton.remove();
       try {
         await video.play();
       } catch {
         // Leave playback available through the browser's controls.
       }
-      video.controls = true;
-      if (document.activeElement === playButton) video.focus();
-      playButton.remove();
     }, { once: true });
     video.after(playButton);
     video.controls = false;
